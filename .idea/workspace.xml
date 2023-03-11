@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JiuManager_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JiuManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/Depet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/Sku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/Vendors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/vo/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/servlet/BaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.1.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/lombok-1.18.24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MpD2l5r0ruHoV5j8DnO62nQ2jl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/src/com/aiaixyz/jiumanager/dao",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.aiaixyz.jiumanager.servlet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\dao" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\servlet" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\entity" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\WEB-INF" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="" />
+      <created>1678455426766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678455426766</updated>
+      <workItem from="1678455427855" duration="2129000" />
+      <workItem from="1678517029399" duration="3834000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

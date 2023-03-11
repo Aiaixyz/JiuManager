@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JiuManager:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JiuManager</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JiuManager/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JiuManager" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
