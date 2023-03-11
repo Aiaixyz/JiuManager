@@ -28,7 +28,7 @@ public class DBManager {
             conn = DBUtils.getConnection();
             ps = conn.prepareStatement(sql);
             for (int i = 0; i < objs.length; i++) {
-                ps.setObject(i,objs[i]);
+                ps.setObject(i+1,objs[i]);
             }
             rs = ps.executeUpdate();
         } catch (Exception e) {

@@ -1,0 +1,12 @@
+package com.aiaixyz.jiumanager.dao;
+
+import com.aiaixyz.jiumanager.entity.po.User;
+
+/**
+ * author LeeC
+ * since JDK 1.8
+ * date 2023/3/11
+ */
+public interface UserDao extends BaseDao{
+    public int addBeanByUser(User user);
+}
