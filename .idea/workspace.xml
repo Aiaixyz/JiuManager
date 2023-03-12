@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Base">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/service/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JiuManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JiuManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/AdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,33 +48,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JetBrains/WorkSpace/Project/JiuManager/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.aiaixyz.jiumanager.servlet" />
@@ -92,8 +88,8 @@
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.test">
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserServiceTest.registerTest">
+    <configuration name="UserDaoTest.getBeanById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +99,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="getBeanById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.getBeanByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JiuManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="getBeanByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.getIdByUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JiuManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="getIdByUsernameTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,10 +153,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JiuManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
+      <option name="METHOD_NAME" value="registerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.registerTest" />
+        <item itemvalue="JUnit.UserDaoTest.getBeanByIdTest" />
+        <item itemvalue="JUnit.UserDaoTest.getBeanById" />
+        <item itemvalue="JUnit.UserDaoTest.getIdByUsernameTest" />
         <item itemvalue="JUnit.UserDaoTest.test" />
-        <item itemvalue="JUnit.UserDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +188,10 @@
       <option name="presentableId" value="Default" />
       <updated>1678455426766</updated>
       <workItem from="1678455427855" duration="2129000" />
-      <workItem from="1678517029399" duration="10670000" />
+      <workItem from="1678517029399" duration="11208000" />
+      <workItem from="1678535368143" duration="5259000" />
+      <workItem from="1678628346185" duration="10421000" />
+      <workItem from="1678640570807" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1678521016407</created>
@@ -149,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678521016407</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Done.">
+      <created>1678527875895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678527875895</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,17 +215,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done." />
   </component>
 </project>

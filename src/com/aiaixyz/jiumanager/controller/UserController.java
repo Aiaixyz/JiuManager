@@ -21,10 +21,22 @@ import java.io.IOException;
 public class UserController extends BaseServlet {
     UserService userService = new UserServiceImpl();
 
+    /**
+     * 用户注册接口
+     * @param req 接受前端
+     * @param resp 返回后端
+     * @return 返回RespBean结果
+     */
     protected RespBean register(HttpServletRequest req, HttpServletResponse resp) {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String realName = req.getParameter("realName");
         return userService.register(new User(null,username,password,realName,null));
+    }
+
+    protected RespBean Login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        return userService.login(username,password);
     }
 }

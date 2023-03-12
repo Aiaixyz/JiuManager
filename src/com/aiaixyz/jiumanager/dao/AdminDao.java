@@ -8,5 +8,5 @@ import com.aiaixyz.jiumanager.entity.po.User;
  * date 2023/3/11
  */
 public interface AdminDao extends BaseDao{
-    public int addBeanByUser(User user);
+
 }

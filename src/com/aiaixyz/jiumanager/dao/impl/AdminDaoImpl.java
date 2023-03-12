@@ -1,6 +1,7 @@
 package com.aiaixyz.jiumanager.dao.impl;
 
 import com.aiaixyz.jiumanager.dao.AdminDao;
+import com.aiaixyz.jiumanager.dao.UserDao;
 import com.aiaixyz.jiumanager.entity.po.User;
 import com.aiaixyz.jiumanager.utils.DBManager;
 
@@ -12,13 +13,9 @@ import java.util.List;
  * date 2023/3/11
  */
 public class AdminDaoImpl implements AdminDao {
-    @Override
-    public int addBeanByUser(User user) {
-        return DBManager.commonUpdate(
-                "insert into u_user(u_username,u_password,u_realname,u_permit) values(?,?,?,0)",
-                user.getuUsername(),user.getuPassword(),user.getuRealname()
-        );
-    }
+
+    UserDao userDao = new UserDaoImpl();
+    AdminDao adminDao = new AdminDaoImpl();
 
     @Override
     public int addBean(Object o) {
@@ -45,9 +42,15 @@ public class AdminDaoImpl implements AdminDao {
         return 0;
     }
 
+    /**
+     * 通过id获取管理员
+     * @param username 用户名
+     * @return int类型ID值
+     * sql:select u_id from u_user where is_delete = 1 and u_permit = 0 and u_username = 'admin';
+     */
     @Override
     public int getIdByUsername(String username) {
-        return 0;
+        return  DBManager.common("select u_id from u_user where is_delete = 1 and u_permit = 1 and u_username = ?",username);
     }
 
     @Override

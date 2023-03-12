@@ -10,7 +10,7 @@ public class User {
     private String uUsername;
     private String uPassword;
     private String uRealname;
-    private String uPermit;
+    private Integer uPermit;
 
     @Override
     public String toString() {
@@ -55,18 +55,18 @@ public class User {
         this.uRealname = uRealname;
     }
 
-    public String getuPermit() {
+    public Integer getuPermit() {
         return uPermit;
     }
 
-    public void setuPermit(String uPermit) {
+    public void setuPermit(Integer uPermit) {
         this.uPermit = uPermit;
     }
 
     public User() {
     }
 
-    public User(Integer uId, String uUsername, String uPassword, String uRealname, String uPermit) {
+    public User(Integer uId, String uUsername, String uPassword, String uRealname, Integer uPermit) {
         this.uId = uId;
         this.uUsername = uUsername;
         this.uPassword = uPassword;

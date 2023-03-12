@@ -55,7 +55,7 @@ public class DBManager {
             ps = conn.prepareStatement(sql);
             if (objs != null){
                 for (int i = 0; i < objs.length; i++) {
-                    ps.setObject(i,objs[i]);
+                    ps.setObject(i+1,objs[i]);
                 }
             }
             rs = ps.executeQuery();
@@ -92,7 +92,7 @@ public class DBManager {
             ps = conn.prepareStatement(sql);
             if (objs != null){
                 for (int i = 0; i < objs.length; i++) {
-                    ps.setObject(i,objs[i]);
+                    ps.setObject(i+1,objs[i]);
                 }
             }
             rs = ps.executeQuery();

@@ -10,5 +10,4 @@ import com.aiaixyz.jiumanager.entity.vo.RespBean;
  */
 public interface UserService extends BaseService<User>{
 
-
 }

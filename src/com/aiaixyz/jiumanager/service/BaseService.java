@@ -13,4 +13,6 @@ public interface BaseService<T> {
     RespBean updateBeanById(T t);
     RespBean getList();
     RespBean getPage(int currentPage);
+    RespBean getIdByUsername(String username);
+    RespBean login(String username,String password);
 }
