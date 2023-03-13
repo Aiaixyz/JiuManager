@@ -11,10 +11,18 @@ import java.util.List;
  * since JDK 1.8
  * date 2023/3/11
  */
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl implements UserDao{
+    /**
+     * 通过用户对象添加
+     * @param user 用户对象
+     * @return 返回int类型结果
+     */
     @Override
-    public int addBean(Object o) {
-        return 0;
+    public int addBean(User user) {
+        return DBManager.commonUpdate(
+                "insert into u_user(u_username,u_password,u_realname,u_permit) values(?,?,?,?)",
+                user.getuUsername(),user.getuPassword(),user.getuRealname(),user.getuPermit()
+        );
     }
 
     @Override
@@ -23,7 +31,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public int updateBeanById(Object o) {
+    public int updateBeanById(User user) {
         return 0;
     }
 
@@ -32,9 +40,13 @@ public class UserDaoImpl implements UserDao {
         return 0;
     }
 
+    /**
+     * 查询用户总数
+     * @return int类型 用户总数
+     */
     @Override
     public int getTotalCount() {
-        return 0;
+        return DBManager.common("select count(u_id) from u_user where is_delete = 1");
     }
 
     /**
@@ -49,22 +61,22 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List getList() {
+    public List<User> getList() {
         return null;
     }
 
     @Override
-    public List getList(int offset, int selectNum) {
+    public List<User> getList(int offset, int selectNum) {
         return null;
     }
 
     /**
-     * 
-     * @param id
-     * @return
+     * 通过id获取用户对象
+     * @param id 用户id
+     * @return User集合
      */
     @Override
-    public List getBeanById(int id) {
+    public List<User> getBeanById(int id) {
         return DBManager.commonQuery("select " +
                 "u_id," +
                 "u_username," +
@@ -76,21 +88,8 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List getListByUsername(String username) {
+    public List<User> getListByUsername(String username) {
         return null;
     }
 
-
-    /**
-     * 通过用户对象添加
-     * @param user 用户对象
-     * @return 返回int类型结果
-     */
-    @Override
-    public int addBeanByUser(User user) {
-        return DBManager.commonUpdate(
-                "insert into u_user(u_username,u_password,u_realname,u_permit) values(?,?,?,?)",
-                user.getuUsername(),user.getuPassword(),user.getuRealname(),user.getuPermit()
-        );
-    }
 }

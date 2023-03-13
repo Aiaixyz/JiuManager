@@ -5,9 +5,6 @@ import com.aiaixyz.jiumanager.dao.impl.UserDaoImpl;
 import com.aiaixyz.jiumanager.entity.po.User;
 import com.aiaixyz.jiumanager.entity.vo.RespBean;
 import com.aiaixyz.jiumanager.service.UserService;
-import com.alibaba.fastjson.JSONObject;
-
-import java.util.List;
 
 /**
  * author LeeC
@@ -23,8 +20,8 @@ public class UserServiceImpl implements UserService {
      * @return RespBean结果
      */
     @Override
-    public RespBean register(User user) {
-        int rSet = userDao.addBeanByUser(user);
+    public RespBean addBean(User user) {
+        int rSet = userDao.addBean(user);
         if(rSet != 1){
             return RespBean.respError("注册失败",null);
         }
@@ -78,7 +75,7 @@ public class UserServiceImpl implements UserService {
     public RespBean login(String username, String password) {
         int id = userDao.getIdByUsername(username);
         if (id != 0){
-            User user =(User)userDao.getBeanById(id).get(0);
+            User user = userDao.getBeanById(id).get(0);
             if (password.equals(user.getuPassword())){
                 return RespBean.respSuccess("登录成功",user.getuRealname());
             }return RespBean.respError("密码错误",null);

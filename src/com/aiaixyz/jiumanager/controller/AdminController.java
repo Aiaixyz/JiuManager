@@ -32,7 +32,7 @@ public class AdminController extends BaseServlet {
         String password = req.getParameter("password");
         String realName = req.getParameter("realName");
         Integer permit = 0;
-        return adminService.register(new User(null,username,password,realName,permit));
+        return adminService.addBean(new User(null,username,password,realName,permit));
 
     }
 

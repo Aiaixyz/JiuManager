@@ -31,12 +31,20 @@ public class UserController extends BaseServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String realName = req.getParameter("realName");
-        return userService.register(new User(null,username,password,realName,null));
+        return userService.addBean(new User(null,username,password,realName,null));
     }
 
-    protected RespBean Login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    /**
+     * 登录接口
+     * @param req 前端请求
+     * @param resp 后端回应
+     * @return RespBean回应 用户不存在/密码错误/登陆成功
+     */
+    protected RespBean Login(HttpServletRequest req, HttpServletResponse resp) {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         return userService.login(username,password);
     }
+
+
 }

@@ -14,11 +14,8 @@ import java.util.List;
  */
 public class AdminDaoImpl implements AdminDao {
 
-    UserDao userDao = new UserDaoImpl();
-    AdminDao adminDao = new AdminDaoImpl();
-
     @Override
-    public int addBean(Object o) {
+    public int addBean(User user) {
         return 0;
     }
 
@@ -28,7 +25,7 @@ public class AdminDaoImpl implements AdminDao {
     }
 
     @Override
-    public int updateBeanById(Object o) {
+    public int updateBeanById(User user) {
         return 0;
     }
 
@@ -50,26 +47,26 @@ public class AdminDaoImpl implements AdminDao {
      */
     @Override
     public int getIdByUsername(String username) {
-        return  DBManager.common("select u_id from u_user where is_delete = 1 and u_permit = 1 and u_username = ?",username);
+        return  DBManager.common("select u_id from u_user where is_delete = 1 and u_permit = 0 and u_username = ?",username);
     }
 
     @Override
-    public List getList() {
+    public List<User> getList() {
         return null;
     }
 
     @Override
-    public List getList(int offset, int selectNum) {
+    public List<User> getList(int offset, int selectNum) {
         return null;
     }
 
     @Override
-    public List getBeanById(int id) {
+    public List<User> getBeanById(int id) {
         return null;
     }
 
     @Override
-    public List getListByUsername(String username) {
+    public List<User> getListByUsername(String username) {
         return null;
     }
 }

@@ -1,8 +1,9 @@
 package dao;
 
+import com.aiaixyz.jiumanager.dao.AdminDao;
 import com.aiaixyz.jiumanager.dao.UserDao;
+import com.aiaixyz.jiumanager.dao.impl.AdminDaoImpl;
 import com.aiaixyz.jiumanager.dao.impl.UserDaoImpl;
-import com.aiaixyz.jiumanager.entity.po.User;
 import org.junit.Test;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  */
 public class UserDaoTest {
     UserDao userDao = new UserDaoImpl();
+    AdminDao adminDao = new AdminDaoImpl();
     @Test
 
 /*    public void test(){
@@ -21,17 +23,17 @@ public class UserDaoTest {
         System.out.println(i);
     }*/
 
-/*    public void getIdByUsernameTest(){
+    public void getIdByUsernameTest(){
         int zs = userDao.getIdByUsername("admin");
         System.out.println(zs);
-    }*/
+    }
 
-    public void getBeanByIdTest(){
+   /* public void getBeanByIdTest(){
         List beanById = userDao.getBeanById(3);
         for (Object list:beanById) {
             System.out.println(list+"***");
         }
 
-    }
+    }*/
 
 }

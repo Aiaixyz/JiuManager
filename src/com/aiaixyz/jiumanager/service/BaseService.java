@@ -8,7 +8,7 @@ import com.aiaixyz.jiumanager.entity.vo.RespBean;
  * date 2023/3/11
  */
 public interface BaseService<T> {
-    RespBean register(T t);
+    RespBean addBean(T t);
     RespBean deleteBeanById(int id);
     RespBean updateBeanById(T t);
     RespBean getList();
