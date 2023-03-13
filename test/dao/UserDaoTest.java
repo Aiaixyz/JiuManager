@@ -19,23 +19,23 @@ public class UserDaoTest {
     AdminDao adminDao = new AdminDaoImpl();
     @Test
 
-/*    public void test(){
-        int i = userDao.addBeanByUser(new User(null, "ls", "123456", "李四", null));
+    public void test(){
+        int i = userDao.addBean(new User(null, "ls", "123456", "李四", null));
         System.out.println(i);
-    }*/
+    }
 
-/*    public void getIdByUsernameTest(){
+    public void getIdByUsernameTest(){
         int zs = adminDao.getIdByUsername("admin");
         System.out.println(zs);
-    }*/
+    }
 
-   /* public void getBeanByIdTest(){
+    public void getBeanByIdTest(){
         List beanById = userDao.getBeanById(3);
         for (Object list:beanById) {
             System.out.println(list+"***");
         }
 
-    }*/
+    }
     public void updateBeanByIdTest(){
         int u_id = 5;
         String username = "wwwww";

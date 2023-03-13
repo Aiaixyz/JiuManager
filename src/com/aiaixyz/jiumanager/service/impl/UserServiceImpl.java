@@ -2,9 +2,13 @@ package com.aiaixyz.jiumanager.service.impl;
 
 import com.aiaixyz.jiumanager.dao.UserDao;
 import com.aiaixyz.jiumanager.dao.impl.UserDaoImpl;
+import com.aiaixyz.jiumanager.entity.bo.UserBo;
 import com.aiaixyz.jiumanager.entity.po.User;
 import com.aiaixyz.jiumanager.entity.vo.RespBean;
 import com.aiaixyz.jiumanager.service.UserService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * author LeeC
@@ -46,9 +50,26 @@ public class UserServiceImpl implements UserService {
         return RespBean.respSuccess("修改信息成功",null);
     }
 
+    /**
+     * 查询所有User信息
+     * @return RespBean msg ,data:userBos
+     */
     @Override
     public RespBean getList() {
-        return null;
+        return getUserBoList(userDao.getList());
+    }
+    public RespBean getUserBoList(List<User> users){
+        List<UserBo> userBos = new ArrayList<>();
+        UserBo userBo;
+        for (User user:users) {
+            userBo = new UserBo(user);
+            userBo.setsPermit(user.getuPermit() == 1?"用户":"管理员");
+            userBos.add(userBo);
+        }
+        if (userBos.isEmpty()){
+            return RespBean.respError("查询失败",null);
+        }
+        return RespBean.respSuccess("查询成功",userBos);
     }
 
     @Override

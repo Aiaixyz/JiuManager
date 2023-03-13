@@ -39,7 +39,6 @@ public class UserDaoImpl implements UserDao{
      */
     @Override
     public int updateBeanById(User user) {
-        Integer id = user.getuId();
         return DBManager.commonUpdate(
                 "update u_user set u_password = ? , u_realname = ? where is_delete = 1 and u_permit = 1 and u_id = ?",
                 user.getuPassword(),user.getuRealname(),user.getuId()
@@ -71,14 +70,36 @@ public class UserDaoImpl implements UserDao{
         return  DBManager.common("select u_id from u_user where is_delete = 1 and u_permit = 1 and u_username = ?",username);
     }
 
+    /**
+     * 获取所有用户资料
+     * @return User类型的List集合
+     */
     @Override
     public List<User> getList() {
-        return null;
+        return DBManager.commonQuery(
+                "select " +
+                        "u_id," +
+                        "u_username," +
+                        "u_password," +
+                        "u_realname," +
+                        "u_permit from u_user where is_delete = 1 and u_permit = 1",User.class);
     }
 
+    /**
+     * 分页查询User
+     * @param offset 页码
+     * @param selectNum 限制条数
+     * @return User类型的List集合
+     */
     @Override
     public List<User> getList(int offset, int selectNum) {
-        return null;
+        return DBManager.commonQuery(
+                "select " +
+                        "u_id," +
+                        "u_username," +
+                        "u_password," +
+                        "u_realname," +
+                        "u_permit from u_user where is_delete = 1 and u_permit = 1 limit ?,?",User.class,offset,selectNum);
     }
 
     /**

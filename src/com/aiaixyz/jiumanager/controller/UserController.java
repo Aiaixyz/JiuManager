@@ -22,10 +22,23 @@ public class UserController extends BaseServlet {
     UserService userService = new UserServiceImpl();
 
     /**
+     * 获取请求转换为User对象
+     * @param id 赋予User对象的Id值
+     * @param permit 配置权限
+     * @return 完整User对象
+     */
+    public User getUser(HttpServletRequest req,Integer id,Integer permit){
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        String realname = req.getParameter("realname");
+        return new User(id,username,password,realname,permit);
+    }
+
+    /**
      * 用户注册接口
      * @return 返回RespBean结果
      */
-    protected RespBean register(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected RespBean Register(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         return userService.addBean(getUser(req,null,1));
     }
 
@@ -43,7 +56,7 @@ public class UserController extends BaseServlet {
      * 通过用户名获取用户Id
      * @return RespBean回应 用户已存在/用户不存在 , data返回用户int类型用户id
      */
-    protected RespBean getIdByUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected RespBean GetIdByUsername(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         return userService.getIdByUsername(username);
     }
@@ -52,23 +65,16 @@ public class UserController extends BaseServlet {
      * 修改用户资料接口
      * @return RespBean修改结果 成功/失败
      */
-    protected RespBean updateBeanById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected RespBean UpdateBeanById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("id"));
         return userService.updateBeanById(getUser(req,id,1));
     }
 
-
     /**
-     * 获取请求转换为User对象
-     * @param req req前端请求
-     * @param id 赋予User对象的Id值
-     * @param permit 配置权限
-     * @return 完整User对象
+     * 获取所有用户信息
+     * @return UserBo类型的List集合
      */
-    public User getUser(HttpServletRequest req,Integer id,Integer permit){
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-        String realname = req.getParameter("realname");
-        return new User(id,username,password,realname,permit);
+    protected RespBean GetList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return userService.getList();
     }
 }

@@ -20,9 +20,14 @@ public class UserServiceTest {
         RespBean zs = userService.login("zs", "123456");
         System.out.println(zs);
     }*/
-    public void getIdByUsernameTest(){
+/*    public void getIdByUsernameTest(){
         RespBean zs = adminService.getIdByUsername("admin");
         System.out.println(zs);
+    }*/
+
+    public void getListTest(){
+        RespBean list = adminService.getList();
+        System.out.println(list);
     }
 
 }

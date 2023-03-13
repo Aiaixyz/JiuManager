@@ -1,7 +1,6 @@
 package com.aiaixyz.jiumanager.dao.impl;
 
 import com.aiaixyz.jiumanager.dao.AdminDao;
-import com.aiaixyz.jiumanager.dao.UserDao;
 import com.aiaixyz.jiumanager.entity.po.User;
 import com.aiaixyz.jiumanager.utils.DBManager;
 
@@ -59,14 +58,36 @@ public class AdminDaoImpl implements AdminDao {
         return  DBManager.common("select u_id from u_user where is_delete = 1 and u_permit = 0 and u_username = ?",username);
     }
 
+    /**
+     * 获取所有用户和管理员资料
+     * @return User类型的List集合
+     */
     @Override
     public List<User> getList() {
-        return null;
+        return DBManager.commonQuery(
+                "select " +
+                        "u_id," +
+                        "u_username," +
+                        "u_password," +
+                        "u_realname," +
+                        "u_permit from u_user where is_delete = 1",User.class);
     }
 
+    /**
+     * 分页查询User
+     * @param offset 页码
+     * @param selectNum 限制条数
+     * @return User类型的List集合
+     */
     @Override
     public List<User> getList(int offset, int selectNum) {
-        return null;
+        return DBManager.commonQuery(
+                "select " +
+                        "u_id," +
+                        "u_username," +
+                        "u_password," +
+                        "u_realname," +
+                        "u_permit from u_user where is_delete = 1 limit ?,?",User.class,offset,selectNum);
     }
 
     @Override

@@ -16,11 +16,12 @@ import com.aiaixyz.jiumanager.service.AdminService;
 public class AdminServiceImpl implements AdminService {
     AdminDao adminDao = new AdminDaoImpl();
     UserDao userDao = new UserDaoImpl();
+    UserServiceImpl userService = new UserServiceImpl();
 
     /**
-     * 通过用户对象添加
+     * 添加管理员
      * @param user 对象
-     * @return int类型结果
+     * @return RespBean msg 成功/失败
      */
     @Override
     public RespBean addBean(User user) {
@@ -51,7 +52,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public RespBean getList() {
-        return null;
+        return userService.getUserBoList(adminDao.getList());
     }
 
     @Override
@@ -86,7 +87,7 @@ public class AdminServiceImpl implements AdminService {
     public RespBean login(String username, String password) {
         int id = adminDao.getIdByUsername(username);
         if (id != 0){
-            User user = userDao.getBeanById(id).get(0);
+            User user = adminDao.getBeanById(id).get(0);
             if (password.equals(user.getuPassword())){
                 return RespBean.respSuccess("登录成功",user.getuRealname());
             }return RespBean.respError("密码错误",null);
