@@ -20,6 +20,7 @@ import java.io.IOException;
 @WebServlet("/AdminController")
 public class AdminController extends BaseServlet {
     AdminService adminService = new AdminServiceImpl();
+    UserController userController = new UserController();
 
     /**
      * 管理员注册接口
@@ -28,11 +29,7 @@ public class AdminController extends BaseServlet {
      * @return 返回RespBean结果
      */
     protected RespBean register(HttpServletRequest req, HttpServletResponse resp) {
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-        String realName = req.getParameter("realName");
-        Integer permit = 0;
-        return adminService.addBean(new User(null,username,password,realName,permit));
+        return adminService.addBean(userController.getUser(req,null,0));
 
     }
 
@@ -40,6 +37,20 @@ public class AdminController extends BaseServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         return adminService.login(username,password);
+    }
+
+    protected RespBean getIdByUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String username = req.getParameter("username");
+        return adminService.getIdByUsername(username);
+    }
+
+    /**
+     * 修改管理员资料接口
+     * @return RespBean修改结果 成功/失败
+     */
+    protected RespBean updateBeanById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        int id = Integer.parseInt(req.getParameter("id"));
+        return adminService.updateBeanById(userController.getUser(req,id,0));
     }
 
 }

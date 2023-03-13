@@ -4,6 +4,7 @@ import com.aiaixyz.jiumanager.dao.AdminDao;
 import com.aiaixyz.jiumanager.dao.UserDao;
 import com.aiaixyz.jiumanager.dao.impl.AdminDaoImpl;
 import com.aiaixyz.jiumanager.dao.impl.UserDaoImpl;
+import com.aiaixyz.jiumanager.entity.po.User;
 import org.junit.Test;
 
 import java.util.List;
@@ -23,10 +24,10 @@ public class UserDaoTest {
         System.out.println(i);
     }*/
 
-    public void getIdByUsernameTest(){
-        int zs = userDao.getIdByUsername("admin");
+/*    public void getIdByUsernameTest(){
+        int zs = adminDao.getIdByUsername("admin");
         System.out.println(zs);
-    }
+    }*/
 
    /* public void getBeanByIdTest(){
         List beanById = userDao.getBeanById(3);
@@ -35,5 +36,13 @@ public class UserDaoTest {
         }
 
     }*/
+    public void updateBeanByIdTest(){
+        int u_id = 5;
+        String username = "wwwww";
+        String password = "ww123456";
+        String realname = "王五";
+        int i = userDao.updateBeanById(new User(u_id, username, password, realname));
+        System.out.println(i);
+    }
 
 }

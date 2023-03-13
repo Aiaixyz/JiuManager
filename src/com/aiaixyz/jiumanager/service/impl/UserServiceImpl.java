@@ -33,9 +33,17 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    /**
+     * 通过Id修改用户信息
+     * @param user 传入的用户对象
+     * @return RespBean 修改成功/修改错误
+     */
     @Override
     public RespBean updateBeanById(User user) {
-        return null;
+        if (userDao.updateBeanById(user) != 1){
+            return RespBean.respError("修改信息错误",null);
+        }
+        return RespBean.respSuccess("修改信息成功",null);
     }
 
     @Override

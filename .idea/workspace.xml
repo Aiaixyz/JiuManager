@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Done by 03/13/2023.">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JiuManager_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JiuManager_Web_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,23 +85,7 @@
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.getIdByUsernameTest">
-    <configuration name="UserDaoTest.getBeanById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JiuManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="getBeanById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserDaoTest.updateBeanByIdTest">
     <configuration name="UserDaoTest.getBeanByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
@@ -134,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.updateBeanByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +128,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="updateBeanByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.getIdByUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JiuManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
+      <option name="METHOD_NAME" value="getIdByUsernameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.updateBeanByIdTest" />
+        <item itemvalue="JUnit.UserServiceTest.getIdByUsernameTest" />
         <item itemvalue="JUnit.UserDaoTest.getIdByUsernameTest" />
         <item itemvalue="JUnit.UserDaoTest.getBeanByIdTest" />
         <item itemvalue="JUnit.UserServiceTest.registerTest" />
-        <item itemvalue="JUnit.UserDaoTest.getBeanById" />
-        <item itemvalue="JUnit.UserDaoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +190,7 @@
       <workItem from="1678628346185" duration="10421000" />
       <workItem from="1678640570807" duration="197000" />
       <workItem from="1678640785476" duration="291000" />
-      <workItem from="1678668944101" duration="2057000" />
+      <workItem from="1678668944101" duration="10151000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1678521016407</created>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678640862401</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Done by 03/13/2023.">
+      <created>1678671020009</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678671020009</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +241,8 @@
     <MESSAGE value="Base" />
     <MESSAGE value="Done." />
     <MESSAGE value="Done by 03/13/23." />
-    <option name="LAST_COMMIT_MESSAGE" value="Done by 03/13/23." />
+    <MESSAGE value="Done by 03/13/2023." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done by 03/13/2023." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -24,9 +24,18 @@ public class AdminDaoImpl implements AdminDao {
         return 0;
     }
 
+    /**
+     * 通过id修改管理员
+     * @param user 用户对象
+     * @return 返回int类型 影响行数
+     * sql:UPDATE u_user set u_password = '123',u_realname = 'lss' where is_delete = 1 AND  u_permit = 0 AND u_id = 5;
+     */
     @Override
     public int updateBeanById(User user) {
-        return 0;
+        return DBManager.commonUpdate(
+                "update u_user set u_password = ? , u_realname = ? where is_delete = 1 and u_permit = 0 and u_id = ?",
+                user.getuPassword(),user.getuRealname(),user.getuId()
+        );
     }
 
     @Override

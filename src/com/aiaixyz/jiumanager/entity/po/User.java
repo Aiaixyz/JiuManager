@@ -12,6 +12,13 @@ public class User {
     private String uRealname;
     private Integer uPermit;
 
+    public User(Integer uId, String uUsername, String uPassword, String uRealname) {
+        this.uId = uId;
+        this.uUsername = uUsername;
+        this.uPassword = uPassword;
+        this.uRealname = uRealname;
+    }
+
     @Override
     public String toString() {
         return "User{" +

@@ -36,9 +36,17 @@ public class AdminServiceImpl implements AdminService {
         return null;
     }
 
+    /**
+     * 通过Id修改用户信息
+     * @param user 传入的用户对象
+     * @return RespBean 修改成功/修改错误
+     */
     @Override
     public RespBean updateBeanById(User user) {
-        return null;
+        if (adminDao.updateBeanById(user) != 1){
+            return RespBean.respError("修改信息错误",null);
+        }
+        return RespBean.respSuccess("修改信息成功",null);
     }
 
     @Override
@@ -52,8 +60,8 @@ public class AdminServiceImpl implements AdminService {
     }
 
     /**
-     * 通过用户名返回ID
-     * @param username 用户名
+     * 通过管理员用户名返回ID
+     * @param username 管理员用户名
      * @return RespBean类型 msg "用户名不存在"//"用户名已存在"
      */
     @Override
