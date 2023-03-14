@@ -12,6 +12,13 @@ public class Sku {
     private Integer dId;
     private Integer vId;
 
+    public Sku(String sName, Integer sQuantity, Integer dId, Integer vId) {
+        this.sName = sName;
+        this.sQuantity = sQuantity;
+        this.dId = dId;
+        this.vId = vId;
+    }
+
     @Override
     public String toString() {
         return "Sku{" +
@@ -23,43 +30,43 @@ public class Sku {
                 '}';
     }
 
-    public Integer getsSku() {
+    public Integer getSSku() {
         return sSku;
     }
 
-    public void setsSku(Integer sSku) {
+    public void setSSku(Integer sSku) {
         this.sSku = sSku;
     }
 
-    public String getsName() {
+    public String getSName() {
         return sName;
     }
 
-    public void setsName(String sName) {
+    public void setSName(String sName) {
         this.sName = sName;
     }
 
-    public Integer getsQuantity() {
+    public Integer getSQuantity() {
         return sQuantity;
     }
 
-    public void setsQuantity(Integer sQuantity) {
+    public void setSQuantity(Integer sQuantity) {
         this.sQuantity = sQuantity;
     }
 
-    public Integer getdId() {
+    public Integer getDId() {
         return dId;
     }
 
-    public void setdId(Integer dId) {
+    public void setDId(Integer dId) {
         this.dId = dId;
     }
 
-    public Integer getvId() {
+    public Integer getVId() {
         return vId;
     }
 
-    public void setvId(Integer vId) {
+    public void setVId(Integer vId) {
         this.vId = vId;
     }
 

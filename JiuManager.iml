@@ -41,5 +41,6 @@
     </orderEntry>
     <orderEntry type="library" name="jquery-3.6.3" level="application" />
     <orderEntry type="library" name="Tomcat 8.5.79" level="application_server_libraries" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>

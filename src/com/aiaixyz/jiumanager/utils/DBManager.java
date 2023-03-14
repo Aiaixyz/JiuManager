@@ -99,6 +99,7 @@ public class DBManager {
 
             Field[] fields = clazz.getDeclaredFields();
             while (rs.next()){
+                //调用实体类的无参构造方法
                 t = clazz.newInstance();
                 for (Field field: fields) {
                     field.setAccessible(true);
