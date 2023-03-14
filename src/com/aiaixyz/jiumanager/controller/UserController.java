@@ -44,12 +44,18 @@ public class UserController extends BaseServlet {
 
     /**
      * 登录接口
+     * 如果登陆成功则清除session中的id后重新写入新的id
      * @return RespBean回应 用户不存在/密码错误/登陆成功
      */
     protected RespBean Login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        return userService.login(username,password);
+        RespBean respBean = userService.login(username, password);
+        if (respBean.getStatus() == 200){
+            req.getSession().removeAttribute("id");
+            req.getSession().setAttribute("id",respBean.getData());
+        }
+        return respBean;
     }
 
     /**

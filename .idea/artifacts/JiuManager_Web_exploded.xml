@@ -3,10 +3,14 @@
     <output-path>$PROJECT_DIR$/out/artifacts/JiuManager</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
-        <element id="directory" name="classes" />
+        <element id="directory" name="classes">
+          <element id="module-output" name="JiuManager" />
+          <element id="library" level="application" name="jquery-3.6.3" />
+        </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="mysql-connector-j-8.0.32" />
           <element id="library" level="project" name="fastjson-1.1.22" />
+          <element id="library" level="application_server_libraries" name="Tomcat 8.5.79" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="JiuManager/web/Web" />

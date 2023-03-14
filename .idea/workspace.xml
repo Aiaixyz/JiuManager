@@ -1,33 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JiuManager:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Done by 03/13/2023.">
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/bo/UserBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/filter/BaseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/adminLogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/check.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/img/radio.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/Bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/JQuery/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/bootstrapValidator/bootstrapValidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/asserts/plugins/bootstrapValidator/zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/userLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JiuManager_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JiuManager_Web_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JiuManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JiuManager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/AdminDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/vo/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/vo/RespBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,6 +156,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -54,16 +166,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/resources",
+    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/src/com/aiaixyz/jiumanager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facet",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.scopes",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -77,14 +189,17 @@
       <recent name="com.aiaixyz.jiumanager.servlet" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\resources" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\dao" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\servlet" />
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager\entity" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\js" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\css" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\plugins\JQuery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\out\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.getListTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.30">
     <configuration name="UserDaoTest.getIdByUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
@@ -112,22 +227,6 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
       <option name="METHOD_NAME" value="updateBeanByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.getIdByUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JiuManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
-      <option name="METHOD_NAME" value="getIdByUsernameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,13 +264,112 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="userLogin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/JiuManager/userLogin.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 8.5.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="JiuManager:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JiuManager" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="0bda6f52-5a9f-4453-a93a-7383eb385590" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3206" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JiuManager:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.userLogin.html" />
+      <item itemvalue="JUnit.UserDaoTest.getIdByUsernameTest" />
+      <item itemvalue="JUnit.UserDaoTest.updateBeanByIdTest" />
+      <item itemvalue="JUnit.UserServiceTest.getListTest" />
+      <item itemvalue="JUnit.UserServiceTest.getlistTest" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.30" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.userLogin.html" />
+        <item itemvalue="JUnit.UserDaoTest.getIdByUsernameTest" />
         <item itemvalue="JUnit.UserServiceTest.getListTest" />
         <item itemvalue="JUnit.UserServiceTest.getlistTest" />
         <item itemvalue="JUnit.UserDaoTest.updateBeanByIdTest" />
-        <item itemvalue="JUnit.UserServiceTest.getIdByUsernameTest" />
-        <item itemvalue="JUnit.UserDaoTest.getIdByUsernameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +387,15 @@
       <workItem from="1678628346185" duration="10421000" />
       <workItem from="1678640570807" duration="197000" />
       <workItem from="1678640785476" duration="291000" />
-      <workItem from="1678668944101" duration="19060000" />
+      <workItem from="1678668944101" duration="20959000" />
+      <workItem from="1678699413056" duration="3630000" />
+      <workItem from="1678707318946" duration="1127000" />
+      <workItem from="1678708594294" duration="452000" />
+      <workItem from="1678709065194" duration="4947000" />
+      <workItem from="1678714396805" duration="345000" />
+      <workItem from="1678714842594" duration="2602000" />
+      <workItem from="1678754908992" duration="3647000" />
+      <workItem from="1678758859542" duration="20244000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1678521016407</created>
@@ -226,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678679529780</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Done by 03/13/2023.">
+      <created>1678697527773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678697527773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,8 +470,18 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="4" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/aiaixyz/jiumanager/servlet/BaseServlet.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="resp" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

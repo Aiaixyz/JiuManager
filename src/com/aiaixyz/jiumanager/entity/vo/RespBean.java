@@ -11,7 +11,7 @@ package com.aiaixyz.jiumanager.entity.vo;
  */
 public class RespBean {
     private int status;
-    private String mas;
+    private String msg;
     private Object data;
 
     public static RespBean respSuccess(String msg,Object data){
@@ -30,12 +30,12 @@ public class RespBean {
         this.status = status;
     }
 
-    public String getMas() {
-        return mas;
+    public String getmsg() {
+        return msg;
     }
 
-    public void setMas(String mas) {
-        this.mas = mas;
+    public void setmsg(String msg) {
+        this.msg = msg;
     }
 
     public Object getData() {
@@ -50,7 +50,7 @@ public class RespBean {
     public String toString() {
         return "RespBean{" +
                 "status=" + status +
-                ", mas='" + mas + '\'' +
+                ", msg='" + msg + '\'' +
                 ", data=" + data +
                 '}';
     }
@@ -58,9 +58,9 @@ public class RespBean {
     public RespBean() {
     }
 
-    public RespBean(int status, String mas, Object data) {
+    public RespBean(int status, String msg, Object data) {
         this.status = status;
-        this.mas = mas;
+        this.msg = msg;
         this.data = data;
     }
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>九管家-Login</title>
+    <link href="./asserts/plugins/Bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.3.min.js"></script>
+    <script src="./asserts/plugins/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+    <script src="./asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+    <script>
+        onload = function () {
+
+            let inputs = document.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].onmouseenter = function (){
+                    inputs[i].style.background = "rgba(45,45,45,0.60)"
+                };
+                inputs[i].onmouseleave = function (){
+                    inputs[i].style.background = "rgba(45,45,45,0.10)"
+                };
+            }
+
+            let username = document.getElementById("username");
+            //添加失去焦点事件
+            username.onblur = function () {
+                if (username.value === '') {
+                    username.style.border = "1px solid rgba(255,100,150,.55)";
+                }else {
+                    username.style.border = "1px solid rgba(255,255,255,.15)";
+                }
+            }
+
+            //添加失去焦点事件
+            let password = document.getElementById("password");
+            password.onblur = function () {
+                if (password.value === '') {
+                    password.style.border = "1px solid rgba(255,100,150,.55)";
+                }else {
+                    password.style.border = "1px solid rgba(255,255,255,.15)";
+                }
+            };
+            let loading = document.getElementsByTagName("body")[0];
+            loading.style.transition = "filter 0.3s 0.3s ease-out";
+            setTimeout(loading.style.filter = "blur(0px)",500)
+        }
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url("./asserts/img/7.jpg") fixed no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: absolute;
+            filter: blur(10px);
+        }
+        body div:nth-child(1){
+            outline: #555555 solid 1px;
+            border-radius: 15px;
+            float: left;
+            width: 500px;
+            height: 520px;
+            margin: 10% auto 10% 6%;
+            background-color: rgba(0,0,0,0.3);
+        }
+        body div:nth-child(1) h1 {
+            width: 300px;
+            height: 80px;
+            margin: auto;
+            font-size: 40px;
+            font-family: "Arial";
+            font-weight: lighter;
+            font-style: oblique;
+            color: #fffaef;
+            padding-top: 60px;
+        }
+        body div:nth-child(1) h2 {
+            width: 300px;
+            height: 30px;
+            margin: auto;
+            font-size: 32px;
+            font-family: "Arial";
+            font-weight: lighter;
+            font-style: oblique;
+            color: #fffaef;
+            padding-bottom: 50px;
+        }
+        input[type="text"],input[type = "password"]{
+            appearance: none;
+            text-align: center;
+            height: 35px;
+            width: 300px;
+            border-radius: 15px;
+            padding: 0 8px;
+            outline: 0;
+            letter-spacing: 1px;
+            color: #fff;
+            font-weight: 600;
+            background: rgba(45,45,45,.10);
+            border: 1px solid rgba(255,255,255,.15);
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+            text-shadow: 0 1px 2px rgba(0,0,0,.1);
+            -o-transition: all .2s;
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            -ms-transition: all .2s;
+            margin-left:20%;
+        }
+        input[type="text"]::placeholder,input[type="password"]::placeholder{
+            color: #fffaef;
+        }
+        input[type="submit"],input[type="button"]{
+            appearance: none;
+            text-align: center;
+            height: 35px;
+            width: 100px;
+            border-radius: 15px;
+            padding: 0 8px;
+            outline: 0;
+            letter-spacing: 1px;
+            color: #fff;
+            font-weight: 600;
+            background: rgba(45,45,45,0.10);
+            border: 1px solid rgba(255,255,255,.15);
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+            text-shadow: 0 1px 2px rgba(0,0,0,.1);
+            -o-transition: all .2s;
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            -ms-transition: all .2s;
+            margin-left:20%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>欢迎使用九管家</h1>
+    <h2>Admin.</h2>
+    <div class=”form-group”>
+        <p><input type="text" name="username" id="username" placeholder="userName" class="form-control"></p>
+        <p><input type="password" name="password" id="password" placeholder="passWord" class="form-control"></p>
+        <p><input type="button" value="登录" class="form-control">
+            <input type="button" value="注册" class="form-control"></p>
+    </div>
+</div>
+</body>
+</html>
