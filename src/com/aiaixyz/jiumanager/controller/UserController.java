@@ -72,8 +72,7 @@ public class UserController extends BaseServlet {
      * @return RespBean修改结果 成功/失败
      */
     protected RespBean UpdateBeanById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("id"));
-        return userService.updateBeanById(getUser(req,id,1));
+        return userService.updateBeanById(getUser(req,Integer.parseInt(req.getParameter("id")),1));
     }
 
     /**
@@ -82,5 +81,9 @@ public class UserController extends BaseServlet {
      */
     protected RespBean GetList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         return userService.getList();
+    }
+
+    protected RespBean getUsernameBySessionId(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return userService.getUsernameById((Integer) req.getSession().getAttribute("id"));
     }
 }

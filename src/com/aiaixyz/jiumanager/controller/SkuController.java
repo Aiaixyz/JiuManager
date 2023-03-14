@@ -17,12 +17,41 @@ import java.io.IOException;
  * since JDK 1.8
  * date 2023/3/14
  */
-
+//getBeanBySku,countName,updateBeanBySku,deleteBeanBySku,addBean,getList
 @WebServlet("/SkuController")
 public class SkuController extends BaseServlet {
+    public Sku getSkuObj(HttpServletRequest req){
+        String name = req.getParameter("name");
+        int quantity = Integer.parseInt(req.getParameter("quantity"));
+        int dId = Integer.parseInt(req.getParameter("dId"));
+        int vId = Integer.parseInt(req.getParameter("vId"));
+        return new Sku(name,quantity,dId,vId);
+    }
+
     SkuService<Sku> skuService = new SkuServiceImpl();
 
     protected RespBean getList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return null;
+        return skuService.getList();
+    }
+
+    protected RespBean countName(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String name = req.getParameter("name");
+        return skuService.countName(name);
+    }
+
+    protected RespBean updateBeanBySku(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.updateBeanBySku(getSkuObj(req));
+    }
+
+    protected RespBean deleteBeanBySku(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.deleteBeanBySku(Integer.parseInt(req.getParameter("sku")));
+    }
+
+    protected RespBean addBean(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.addBean(getSkuObj(req));
+    }
+
+    protected RespBean getBeanBySku(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.getBeanBySku(Integer.parseInt(req.getParameter("sku")));
     }
 }

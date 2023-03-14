@@ -110,4 +110,12 @@ public class UserServiceImpl implements UserService {
             }return RespBean.respError("密码错误",null);
         }return RespBean.respError("用户不存在",null);
     }
+
+    @Override
+    public RespBean getUsernameById(int id){
+        User user = userDao.getBeanById(id).get(0);
+        if (user.getuId() == 0){
+            return RespBean.respError("未查询到用户",null);
+        }return RespBean.respSuccess("请求成功",user.getuUsername());
+    }
 }

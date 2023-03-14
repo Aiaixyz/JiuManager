@@ -12,6 +12,21 @@
 <script>
     onload =function (){
         $(function (){
+            $.ajax({
+                url:'/JiuManager/UserController',
+                data:{
+                    method:"getUsernameBySessionId",
+                },
+                type:'get',
+                dataType:'json',
+                success:function (respBean){
+                    console.log("成功返回数据");
+                    console.log(respBean.msg);
+                    if (respBean.status == 200){
+                        $("#username").innerHTML = respBean.data;
+                    }
+                }
+            })
 
 
 
