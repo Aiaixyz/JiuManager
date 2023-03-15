@@ -11,6 +11,11 @@ public class Vendors {
     private String vPhone;
     private String vAddress;
 
+    public Vendors(String vName, String vPhone, String vAddress) {
+        this.vName = vName;
+        this.vPhone = vPhone;
+        this.vAddress = vAddress;
+    }
 
     @Override
     public String toString() {

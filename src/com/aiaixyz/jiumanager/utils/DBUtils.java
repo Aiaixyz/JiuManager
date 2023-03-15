@@ -38,7 +38,7 @@ public class DBUtils {
 
     /**
      * getConnection；获取连接对象
-     * @return
+     * @return 连接
      */
 
     public static Connection getConnection() {
@@ -54,7 +54,7 @@ public class DBUtils {
 
     /**
      * 关闭所有连接对象 ...可变参数
-     * @param autoCloseables
+     * @param autoCloseables 自动关闭
      */
 
     public static void closeAll(AutoCloseable... autoCloseables){

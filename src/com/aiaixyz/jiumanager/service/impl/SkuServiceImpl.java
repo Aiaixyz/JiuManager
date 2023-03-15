@@ -17,10 +17,10 @@ public class SkuServiceImpl implements SkuService<Sku> {
     SkuDao skuDao = new SkuDaoImpl();
     @Override
     public RespBean getBeanBySku(int sku) {
-        Sku skuObj = skuDao.getBeanBySku(sku).get(0);
-        if (skuObj!= null){
-            return RespBean.respSuccess("请求成功",skuObj);
-        }return RespBean.respError("请求失败",null);
+        List<Sku> list = skuDao.getBeanBySku(sku);
+        if (list.isEmpty()){
+            return RespBean.respError("请求失败",null);
+        }return RespBean.respSuccess("请求成功",list.get(0));
     }
 
     @Override
