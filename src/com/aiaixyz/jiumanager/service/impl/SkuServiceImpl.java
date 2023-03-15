@@ -1,6 +1,8 @@
 package com.aiaixyz.jiumanager.service.impl;
 
+import com.aiaixyz.jiumanager.dao.ReportDao;
 import com.aiaixyz.jiumanager.dao.SkuDao;
+import com.aiaixyz.jiumanager.dao.impl.ReportDaoImpl;
 import com.aiaixyz.jiumanager.dao.impl.SkuDaoImpl;
 import com.aiaixyz.jiumanager.entity.po.Sku;
 import com.aiaixyz.jiumanager.entity.vo.RespBean;
@@ -15,6 +17,7 @@ import java.util.List;
  */
 public class SkuServiceImpl implements SkuService<Sku> {
     SkuDao skuDao = new SkuDaoImpl();
+    ReportDao reportDao = new ReportDaoImpl();
     @Override
     public RespBean getBeanBySku(int sku) {
         List<Sku> list = skuDao.getBeanBySku(sku);

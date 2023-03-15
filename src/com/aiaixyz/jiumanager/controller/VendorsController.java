@@ -7,6 +7,7 @@ import com.aiaixyz.jiumanager.service.impl.VendorsServiceImpl;
 import com.aiaixyz.jiumanager.servlet.BaseServlet;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,6 +17,8 @@ import java.io.IOException;
  * since JDK 1.8
  * date 2023/3/15
  */
+
+@WebServlet("/VendorsController")
 public class VendorsController extends BaseServlet {
     //Service方法列表:addBean,getIdByName,deleteBeanById,updateBeanById,getBeanById,getBeanByName,getList,getPhoneByName,getAddressByName
     VendorsService vendorsService = new VendorsServiceImpl();
