@@ -52,10 +52,14 @@ public class UserController extends BaseServlet {
         String password = req.getParameter("password");
         RespBean respBean = userService.login(username, password);
         if (respBean.getStatus() == 200){
+            User user = (User)respBean.getData();
             req.getSession().removeAttribute("id");
-            req.getSession().setAttribute("id",respBean.getData());
+            req.getSession().removeAttribute("realname");
+            req.getSession().setAttribute("id",user.getuId());
+            req.getSession().setAttribute("realname",user.getuRealname());
+            return RespBean.respSuccess("登录成功",null);
         }
-        return respBean;
+        return RespBean.respSuccess("登录失败",null);
     }
 
     /**

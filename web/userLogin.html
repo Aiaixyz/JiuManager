@@ -55,9 +55,6 @@
             $("#button_id").click(function (){
                 let flag = $("form").data("bootstrapValidator").isValid();
                 if (flag){
-                    console.log("进入ajax方法");
-                    console.log($("#username").val());
-                    console.log($("#password").val());
                     $.ajax({
                         url:'/JiuManager/UserController',
                         data:{
@@ -69,9 +66,7 @@
                         dataType:'json',
                         async: true,
                         success:function (respBean){
-                            console.log("成功返回数据");
-                            alert(respBean.msg);
-                            console.log(respBean.msg);
+                            alert(respBean.data);
                             if (respBean.status == 200){
                                 location.href = 'user.html'
                             }

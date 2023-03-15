@@ -106,7 +106,7 @@ public class UserServiceImpl implements UserService {
         if (id != 0){
             User user = userDao.getBeanById(id).get(0);
             if (password.equals(user.getuPassword())){
-                return RespBean.respSuccess("登录成功",user.getuId());
+                return RespBean.respSuccess("登录成功",user);
             }return RespBean.respError("密码错误",null);
         }return RespBean.respError("用户不存在",null);
     }
