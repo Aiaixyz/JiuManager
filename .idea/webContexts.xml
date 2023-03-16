@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/web/adminLogin.html" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/depet/depetManager.html" value="file://$PROJECT_DIR$/web/depet" />
         <entry key="file://$PROJECT_DIR$/web/index.html" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/login.html" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/user.html" value="file://$PROJECT_DIR$/web" />

@@ -18,6 +18,25 @@ import java.util.List;
 public class SkuServiceImpl implements SkuService<Sku> {
     SkuDao skuDao = new SkuDaoImpl();
     ReportDao reportDao = new ReportDaoImpl();
+
+    @Override
+    public RespBean inSkuQuantity(int sku, int num) {
+        if (sku > -1 && num > -1){
+            if (skuDao.inSkuQuantity(sku,num) != 1){
+                return RespBean.respError("入库失败",null);
+            }return RespBean.respSuccess("入库成功",null);
+        }return RespBean.respError("数据非法",null);
+    }
+
+    @Override
+    public RespBean outSkuQuantity(int sku, int num) {
+        if (sku > -1 && num > -1){
+            if (skuDao.outSkuQuantity(sku,num) != 1){
+                return RespBean.respError("出库失败",null);
+            }return RespBean.respSuccess("出库成功",null);
+        }return RespBean.respError("数据非法",null);
+    }
+
     @Override
     public RespBean getBeanBySku(int sku) {
         List<Sku> list = skuDao.getBeanBySku(sku);

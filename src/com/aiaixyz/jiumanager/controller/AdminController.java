@@ -1,5 +1,6 @@
 package com.aiaixyz.jiumanager.controller;
 
+import com.aiaixyz.jiumanager.entity.po.User;
 import com.aiaixyz.jiumanager.entity.vo.RespBean;
 import com.aiaixyz.jiumanager.service.AdminService;
 import com.aiaixyz.jiumanager.service.impl.AdminServiceImpl;
@@ -38,7 +39,14 @@ public class AdminController extends BaseServlet {
     protected RespBean Login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        return adminService.login(username,password);
+        RespBean respBean = adminService.login(username, password);
+        if (respBean.getStatus() == 200){
+            User user = (User)respBean.getData();
+            req.getSession().setAttribute("id",user.getuId());
+            req.getSession().setAttribute("realname",user.getuRealname());
+            return RespBean.respSuccess("登录成功",null);
+        }
+        return RespBean.respSuccess("登录失败",null);
     }
 
     /**

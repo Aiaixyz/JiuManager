@@ -12,6 +12,22 @@ import java.util.List;
  * date 2023/3/14
  */
 public class SkuDaoImpl implements SkuDao {
+    @Override
+    public int inSkuQuantity(int sku, int num) {
+        return DBManager.commonUpdate(
+                "update s_sku set s_quantity = s_quantity + ? where is_delete = 1 and s_sku = ?",
+                num,sku
+        );
+    }
+
+    @Override
+    public int outSkuQuantity(int sku, int num) {
+        return DBManager.commonUpdate(
+                "update s_sku set s_quantity = s_quantity - ? where is_delete = 1 and s_sku = ?",
+                num,sku
+        );
+    }
+
     /**
      * 添加对象
      * @param sku 传入的对象

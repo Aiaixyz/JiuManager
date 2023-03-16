@@ -90,4 +90,18 @@ public class UserController extends BaseServlet {
     protected RespBean getUsernameBySessionId(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         return userService.getUsernameById((Integer) req.getSession().getAttribute("id"));
     }
+    protected RespBean getRealNameBySessionId(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return RespBean.respSuccess("",req.getSession().getAttribute("realname"));
+    }
+
+    protected RespBean getSessionId (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return RespBean.respSuccess("suc",req.getSession().getAttribute("id"));
+    }
+
+    protected RespBean LoginOut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getSession().removeAttribute("id");
+        req.getSession().removeAttribute("realname");
+        req.getSession().removeAttribute("username");
+        return RespBean.respSuccess("您已经退出!",null);
+    }
 }

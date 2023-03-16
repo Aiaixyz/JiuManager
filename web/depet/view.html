@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $.ajax({
+        url:'/JiuManager/SkuController',
+        data:{
+          method:"getList",
+        },
+        type:'get',
+        dataType:'json',
+        success:function (respBean){
+          console.log(respBean.data);
+          let arr = respBean.data;
+          for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            let table =$( "    <tr>\n" +
+                    "      <th scope='row'>"+arr[i].sSku+"</th>" +
+                    "      <td>"+arr[i].sName+"</td>" +
+                    "      <td>"+arr[i].sQuantity+"</td>" +
+                    "      <td>"+arr[i].dId+"</td>" +
+                    "      <td>"+arr[i].vId+"</td>" +
+                    "    </tr>");
+            $("#tbody").append(table);
+          }
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <table class="table">
+    <caption>当前仓库信息：</caption>
+    <thead>
+    <tr>
+      <th>SKU</th>
+      <th>商品名称</th>
+      <th>数量</th>
+      <th>仓库ID</th>
+      <th>供应商ID</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

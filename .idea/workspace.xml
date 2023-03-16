@@ -9,21 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Done by 03/14/2023.">
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/SkuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/SkuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/SkuDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/SkuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dao/SkuDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="aefc3a73-c0ca-4066-bb0d-79fe64a018a4" name="变更" comment="Done by 03/15/2023.">
+      <change afterPath="$PROJECT_DIR$/test/dao/ReportDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/service/ReportServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/depet/depetManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/depet/shippingIn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/depet/shippingOut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/depet/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/report/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/report/reportView.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JiuManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JiuManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/Sku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/po/Sku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/utils/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/SkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/SkuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/SkuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/SkuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/ReportDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/ReportDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/SkuDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/dao/impl/SkuDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/vo/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/entity/vo/RespBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/SkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aiaixyz/jiumanager/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/adminLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/adminLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/userLogin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +47,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -79,13 +90,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/src/com/aiaixyz/jiumanager",
+    "last_opened_file_path": "D:/JetBrains/WorkSpace/Project/JiuManager/resources/mysql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propCompiler",
@@ -102,18 +113,19 @@
       <recent name="com.aiaixyz.jiumanager.servlet" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\resources\mysql" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\img" />
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\plugins\BootstrapV3" />
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\src\com\aiaixyz\jiumanager" />
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\js" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\css" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web" />
-      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\asserts\plugins\JQuery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\web\report" />
       <recent name="D:\JetBrains\WorkSpace\Project\JiuManager\out\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SkuDaoTest.getList">
-    <configuration name="SkuDaoTest.addBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.30">
+    <configuration name="ReportDaoTest.getListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
@@ -122,72 +134,72 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.SkuDaoTest" />
-      <option name="METHOD_NAME" value="addBean" />
+      <option name="MAIN_CLASS_NAME" value="dao.ReportDaoTest" />
+      <option name="METHOD_NAME" value="getListTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkuDaoTest.countName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportServiceTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dao.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.SkuDaoTest" />
-      <option name="METHOD_NAME" value="countName" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ReportServiceTest" />
+      <option name="METHOD_NAME" value="Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkuDaoTest.deleteBeanBySku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendorsServiceTest.getAddressByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dao.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.SkuDaoTest" />
-      <option name="METHOD_NAME" value="deleteBeanBySku" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.VendorsServiceTest" />
+      <option name="METHOD_NAME" value="getAddressByNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkuDaoTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendorsServiceTest.getListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dao.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.SkuDaoTest" />
-      <option name="METHOD_NAME" value="getList" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.VendorsServiceTest" />
+      <option name="METHOD_NAME" value="getListTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkuDaoTest.updateBeanBySku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendorsServiceTest.getPhoneByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JiuManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dao.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.SkuDaoTest" />
-      <option name="METHOD_NAME" value="updateBeanBySku" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.VendorsServiceTest" />
+      <option name="METHOD_NAME" value="getPhoneByNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -282,20 +294,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SkuDaoTest.addBean" />
-      <item itemvalue="JUnit.SkuDaoTest.countName" />
-      <item itemvalue="JUnit.SkuDaoTest.deleteBeanBySku" />
-      <item itemvalue="JUnit.SkuDaoTest.getList" />
-      <item itemvalue="JUnit.SkuDaoTest.updateBeanBySku" />
+      <item itemvalue="JUnit.ReportDaoTest.getListTest" />
+      <item itemvalue="JUnit.ReportServiceTest.Test" />
+      <item itemvalue="JUnit.VendorsServiceTest.getAddressByNameTest" />
+      <item itemvalue="JUnit.VendorsServiceTest.getListTest" />
+      <item itemvalue="JUnit.VendorsServiceTest.getPhoneByNameTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.30" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SkuDaoTest.getList" />
-        <item itemvalue="JUnit.SkuDaoTest.addBean" />
-        <item itemvalue="JUnit.SkuDaoTest.deleteBeanBySku" />
-        <item itemvalue="JUnit.SkuDaoTest.updateBeanBySku" />
-        <item itemvalue="JUnit.SkuDaoTest.countName" />
+        <item itemvalue="JUnit.ReportDaoTest.getListTest" />
+        <item itemvalue="JUnit.ReportServiceTest.Test" />
+        <item itemvalue="JUnit.VendorsServiceTest.getAddressByNameTest" />
+        <item itemvalue="JUnit.VendorsServiceTest.getPhoneByNameTest" />
+        <item itemvalue="JUnit.VendorsServiceTest.getListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +333,10 @@
       <workItem from="1678714396805" duration="345000" />
       <workItem from="1678714842594" duration="2602000" />
       <workItem from="1678754908992" duration="3647000" />
-      <workItem from="1678758859542" duration="34081000" />
+      <workItem from="1678758859542" duration="34723000" />
+      <workItem from="1678841704104" duration="33994000" />
+      <workItem from="1678927905972" duration="10681000" />
+      <workItem from="1678942050841" duration="29372000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1678521016407</created>
@@ -372,7 +387,35 @@
       <option name="project" value="LOCAL" />
       <updated>1678787493838</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Done by 03/14/2023.">
+      <created>1678803525953</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678803525953</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Done by 03/15/2023.">
+      <created>1678859651291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678859651291</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Done by 03/15/2023.">
+      <created>1678869559345</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678869559345</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Done by 03/15/2023.">
+      <created>1678888269993</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678888269993</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +438,8 @@
     <MESSAGE value="Done by 03/13/23." />
     <MESSAGE value="Done by 03/13/2023." />
     <MESSAGE value="Done by 03/14/2023." />
-    <option name="LAST_COMMIT_MESSAGE" value="Done by 03/14/2023." />
+    <MESSAGE value="Done by 03/15/2023." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done by 03/15/2023." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,11 +448,6 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="4" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/aiaixyz/jiumanager/servlet/BaseServlet.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

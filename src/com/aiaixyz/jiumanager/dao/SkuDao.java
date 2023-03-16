@@ -10,6 +10,10 @@ import com.aiaixyz.jiumanager.entity.po.Sku;
  */
 public interface SkuDao {
 
+    int inSkuQuantity(int sku,int num);
+
+    int outSkuQuantity(int sku,int num);
+
     //添加对象
     int addBean(Sku sku);
 

@@ -35,10 +35,11 @@ public class LoginFilter extends BaseFilter {
                 || uri.endsWith(".js")
                 || uri.endsWith(".css")
                 || uri.endsWith("UserController")
+                || uri.endsWith("AdminController")
                 || uri.endsWith("7.jpg")
                 || uri.endsWith("20.jpg")
                 || uri.endsWith("100.jpg")
-                || "login".equals(method)
+                || "Login".equals(method)
                 || "register".equals(method)){
             //放行
             filterChain.doFilter(request,response);

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report View Page</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $.ajax({
+        url:'/JiuManager/ReportController',
+        data:{
+          method:"getList",
+        },
+        type:'get',
+        dataType:'json',
+        success:function (respBean){
+          console.log(respBean.data);
+          let arr = respBean.data;
+          for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            let DataString = new Date(arr[i].rDate);
+
+            var DateString = new Date(arr[i].rDate),
+                      newYear = DateString .getFullYear(),
+                      newMonth = DateString .getMonth() + 1,
+                      newDay = DateString .getDate(),
+                      newHour = DateString .getHours(),
+                      newMin = DateString .getMinutes(),
+                      newSen = DateString .getSeconds(),
+                      newTime = newYear + '/' + newMonth + '/' + newDay + ' ' + newHour + ':' + newMin + ':' + newSen;
+
+            let table =$( "    <tr>\n" +
+                    "      <th scope='row'>"+arr[i].rId+"</th>" +
+                    "      <td>"+newTime+"</td>" +
+                    "      <td>"+arr[i].rOperation+"</td>" +
+                    "      <td>"+arr[i].rNote+"</td>" +
+                    "      <td>"+arr[i].uId+"</td>" +
+                    "      <td>"+arr[i].sSku+"</td>" +
+                    "    </tr>");
+            $("#tbody").append(table);
+          }
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <table class="table">
+    <caption>当前仓库信息：</caption>
+    <thead>
+    <tr>
+      <th>事件ID</th>
+      <th>发生时间</th>
+      <th>操作内容</th>
+      <th>操作备注</th>
+      <th>用户ID</th>
+      <th>SKU</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

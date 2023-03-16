@@ -12,6 +12,9 @@ import com.aiaixyz.jiumanager.entity.vo.RespBean;
 //getBeanBySku,countName,updateBeanBySku,deleteBeanBySku,addBean,getList
 
 public interface SkuService<T> {
+    RespBean inSkuQuantity(int sku,int num);
+
+    RespBean outSkuQuantity(int sku,int num);
     RespBean getBeanBySku(int sku);
     RespBean countName(String name);
     RespBean updateBeanBySku(Sku sku);

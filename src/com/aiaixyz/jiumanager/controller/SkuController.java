@@ -57,4 +57,13 @@ public class SkuController extends BaseServlet {
     protected RespBean getBeanBySku(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         return skuService.getBeanBySku(Integer.parseInt(req.getParameter("sku")));
     }
+
+    protected RespBean inSkuQuantity(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.inSkuQuantity(Integer.parseInt(req.getParameter("sku")),Integer.parseInt(req.getParameter("num")));
+    }
+
+    protected RespBean outSkuQuantity(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return skuService.outSkuQuantity(Integer.parseInt(req.getParameter("sku")),Integer.parseInt(req.getParameter("num")));
+    }
+
 }

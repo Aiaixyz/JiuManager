@@ -52,7 +52,7 @@ public class ReportDaoImpl implements ReportDao {
     @Override
     public List<Report> getList() {
         return DBManager.commonQuery(
-                "Select r_id,r_date,r_operation,r_note,u_id,s_sku where is_delete = 1",
+                "Select r_id,r_date,r_operation,r_note,u_id,s_sku from r_report where is_delete = 1",
                 Report.class
         );
     }

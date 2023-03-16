@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>shippingIn</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+    <script>
+        $(function (){
+            let arr = null;
+            $.ajax({
+                url:'/JiuManager/SkuController',
+                data:{
+                    method:"getList",
+                },
+                type:'get',
+                dataType:'json',
+                success:function (respBean){
+                    console.log(respBean.data);
+                     arr = respBean.data;
+                    for (let i = 0; i < arr.length; i++) {
+                        console.log(arr[i]);
+                        let opt = "<option>"+arr[i].sSku+"</option>";
+                        $("#sku").append(opt);
+                    }
+                }
+            })
+            $("#sku").blur(function (){
+                let skuVal = $("#sku").val();
+                for (let i = 0; i <arr.length ; i++) {
+                    if (skuVal == arr[i].sSku){
+                        $("#name").val(arr[i].sName)
+                        $("#quantity").val(arr[i].sQuantity)
+                        $("#dId").val(arr[i].dId)
+                        $("#vId").val(arr[i].vId)
+                    }
+                }
+            })
+            $("#shippingIn").click(function (){
+                let inNum = $("#inNum").val();
+                let inSku = $("#sku").val();
+                $.ajax({
+                    url:'/JiuManager/SkuController',
+                    data:{
+                        method:"inSkuQuantity",
+                        sku:inSku,
+                        num:inNum,
+                    },
+                    type:'get',
+                    dataType:'json',
+                    success:function (respBean){
+                        console.log(respBean);
+                            alert(respBean.msg)
+                    }
+                })
+            })
+
+
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="container"><label></label>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h4><label>Sku:</label><select class="form-control input-lg" id="sku">
+        </select></h4>
+        <from class="form-inline">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4">
+                <label>商品名称:</label><input type="text" class="form-control" id="name" placeholder="商品名称" disabled="disabled">
+                <label>商品数量:</label><input type="text" class="form-control" id="quantity" placeholder="商品数量" disabled="disabled">
+                <div style="float: right;margin-top: 50px">
+                    <label>请输入入库数量:</label><input type="text" class="form-control" id="inNum" placeholder="入库数量">
+                </div>
+            </div>
+            <div class="col-md-1"></div><div class="col-md-1"></div>
+            <div class="col-md-4">
+                <label>仓库 ID:</label><input type="text" class="form-control" id="dId" placeholder="仓库ID" disabled="disabled">
+                <label>供应商ID:</label><input type="text" class="form-control" id="vId" placeholder="供应商ID" disabled="disabled">
+                <div style="float: left;margin-top: 73px">
+                    <button type="button" class="btn btn-primary" id="shippingIn">入库</button>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </from>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+</body>
+</html>
