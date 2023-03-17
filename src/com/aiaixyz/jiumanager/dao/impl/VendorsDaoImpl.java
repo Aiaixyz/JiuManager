@@ -17,7 +17,7 @@ public class VendorsDaoImpl implements VendorsDao {
     public int addBean(Vendors vendors) {
         return DBManager.commonUpdate(
                 "insert into v_vendors(v_name,v_phone,v_address) values(?,?,?)",
-                vendors.getvName(),vendors.getvPhone(),vendors.getvAddress()
+                vendors.getVName(),vendors.getVPhone(),vendors.getVAddress()
         );
     }
 
@@ -41,7 +41,7 @@ public class VendorsDaoImpl implements VendorsDao {
     public int updateBeanById(Vendors vendors) {
         return DBManager.commonUpdate(
                 "update v_vendors set v_name = ? ,v_phone = ?,v_address = ? where is_delete = 1 and v_id = ?",
-                vendors.getvName(),vendors.getvPhone(),vendors.getvAddress(),vendors.getvId()
+                vendors.getVName(),vendors.getVPhone(),vendors.getVAddress(),vendors.getVId()
         );
     }
 

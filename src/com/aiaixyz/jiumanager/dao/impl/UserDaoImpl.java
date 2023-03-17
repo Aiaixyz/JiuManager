@@ -22,13 +22,16 @@ public class UserDaoImpl implements UserDao{
     public int addBean(User user) {
         return DBManager.commonUpdate(
                 "insert into u_user(u_username,u_password,u_realname,u_permit) values(?,?,?,?)",
-                user.getuUsername(),user.getuPassword(),user.getuRealname(),user.getuPermit()
+                user.getUUsername(),user.getUPassword(),user.getURealname(),user.getUPermit()
         );
     }
 
     @Override
     public int deleteBeanById(int id) {
-        return 0;
+        return DBManager.commonUpdate(
+                "update u_user set is_delete = 0 where u_id = ?",
+                id
+        );
     }
 
 
@@ -42,7 +45,7 @@ public class UserDaoImpl implements UserDao{
     public int updateBeanById(User user) {
         return DBManager.commonUpdate(
                 "update u_user set u_password = ? , u_realname = ? where is_delete = 1 and u_permit = 1 and u_id = ?",
-                user.getuPassword(),user.getuRealname(),user.getuId()
+                user.getUPassword(),user.getURealname(),user.getUId()
         );
     }
 

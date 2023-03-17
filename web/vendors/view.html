@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>view</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $.ajax({
+        url:'/JiuManager/VendorsController',
+        data:{
+          method:"getList",
+        },
+        type:'get',
+        dataType:'json',
+        success:function (respBean){
+          console.log(respBean);
+          let arr = respBean.data;
+          for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            let table =$( "    <tr>\n" +
+                    "      <th scope='row'>"+arr[i].vId+"</th>" +
+                    "      <td>"+arr[i].vName+"</td>" +
+                    "      <td>"+arr[i].vPhone+"</td>" +
+                    "      <td>"+arr[i].vAddress+"</td>" +
+                    "    </tr>");
+            $("#tbody").append(table);
+          }
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <table class="table">
+    <caption>全部供应商信息：</caption>
+    <thead>
+    <tr>
+      <th>供应商ID</th>
+      <th>供应商名称</th>
+      <th>联系方式</th>
+      <th>供应商地址</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

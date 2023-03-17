@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>view</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $.ajax({
+        url:'/JiuManager/UserController',
+        data:{
+          method:"GetList",
+        },
+        type:'get',
+        dataType:'json',
+        success:function (respBean){
+          console.log(respBean);
+          let arr = respBean.data;
+          for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            let table =$( "    <tr>\n" +
+                    "      <th scope='row'>"+arr[i].user.uId+"</th>" +
+                    "      <td>"+arr[i].user.uUsername+"</td>" +
+                    "      <td>"+arr[i].user.uPassword+"</td>" +
+                    "      <td>"+arr[i].user.uRealname+"</td>" +
+                    "      <td>"+arr[i].user.uPermit+"</td>" +
+                    "    </tr>");
+            $("#tbody").append(table);
+          }
+        }
+      })
+    })
+    $("#delText").click(function (){
+        $.ajax({
+          url:'/JiuManager/UserController',
+          data:{
+            method:"deleteBeanById",
+            id:$("#delText").val()
+          },
+          type:'get',
+          dataType:'json',
+          complete:function (respBean){alert(respBean.msg)}
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <div class="col-md-3">
+    <h4><label>删除用户</label><input type="text" class="form-control" id="delText" placeholder="UID"></h4>
+    <input type="button" value="确认删除" class="form-control">
+  </div>
+  <table class="table">
+    <caption>用户列表</caption>
+    <thead>
+    <tr>
+      <th>用户ID</th>
+      <th>用户名</th>
+      <th>密码</th>
+      <th>姓名</th>
+      <th>权限</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

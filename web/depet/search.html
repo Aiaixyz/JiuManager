@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>depetSearch</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $("#search").click(function (){
+        let text =  $("#searchText").val();
+        console.log(text);
+        if (text == ""){
+          alert("请输入搜索内容")
+        }else{
+          $.ajax({
+            url:'/JiuManager/SkuController',
+            data:{
+              method:"getBeanBySku",
+              sku:$("#searchText").val()
+            },
+            type:'get',
+            dataType:'json',
+            success:function (respBean){
+              console.log(respBean.data);
+              let arr = respBean.data;
+              for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+                let table =$( "    <tr>\n" +
+                        "      <th scope='row'>"+arr[i].sSku+"</th>" +
+                        "      <td>"+arr[i].sName+"</td>" +
+                        "      <td>"+arr[i].sQuantity+"</td>" +
+                        "      <td>"+arr[i].dId+"</td>" +
+                        "      <td>"+arr[i].vId+"</td>" +
+                        "    </tr>");
+                $("#tbody").append(table);
+              }
+            }
+          })
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <h2>快速查询:</h2>
+
+  </nav>
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <form class="form-group">
+    <div class="col-md-12">
+      <label>搜索：</label><input type="text" id="searchText" class="form-control" placeholder="请输入SKU">
+      <input type="button" id="search" value="查询" class="form-control">
+    </div>
+      <div class="col-md-12">
+        <table class="table">
+          <caption>当前信息：</caption>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+
+</div>
+
+</body>
+</html>

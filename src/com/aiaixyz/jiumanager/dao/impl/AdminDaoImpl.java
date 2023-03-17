@@ -33,7 +33,7 @@ public class AdminDaoImpl implements AdminDao {
     public int updateBeanById(User user) {
         return DBManager.commonUpdate(
                 "update u_user set u_password = ? , u_realname = ? where is_delete = 1 and u_permit = 0 and u_id = ?",
-                user.getuPassword(),user.getuRealname(),user.getuId()
+                user.getUPassword(),user.getURealname(),user.getUId()
         );
     }
 

@@ -40,9 +40,33 @@
                     "      <td>"+arr[i].rNote+"</td>" +
                     "      <td>"+arr[i].uId+"</td>" +
                     "      <td>"+arr[i].sSku+"</td>" +
+                    "      <td><button class='form-control' name='del'>删除</button></td>" +
                     "    </tr>");
             $("#tbody").append(table);
           }
+        }
+      })
+
+      $("#delBtn").click(function (){
+        let inputText = $("#text").val();
+        if (inputText == ""){
+          alert("请输入事件ID")
+        }else {
+          $.ajax({
+            url:'/JiuManager/ReportController',
+            data:{
+              method:"deleteReportById",
+              rid:$("#text").val()
+            },
+            type:'get',
+            dataType:'json',
+            complete:function (respBean){
+              console.log(respBean);
+              if (respBean.state == 200){
+                alert("删除成功");
+              }
+            }
+          })
         }
       })
     })
@@ -50,6 +74,9 @@
 </head>
 <body>
 <div class="container">
+  <div class="nav">
+    <input type="text" class="form-control" id="text" placeholder="事件ID"><input type="button" class="form-control" id="delBtn" value="删除">
+  </div>
   <table class="table">
     <caption>当前仓库信息：</caption>
     <thead>
@@ -60,6 +87,7 @@
       <th>操作备注</th>
       <th>用户ID</th>
       <th>SKU</th>
+      <th>操作</th>
     </tr>
     </thead>
     <tbody id="tbody">

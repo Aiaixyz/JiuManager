@@ -27,35 +27,35 @@ public class Vendors {
                 '}';
     }
 
-    public Integer getvId() {
+    public Integer getVId() {
         return vId;
     }
 
-    public void setvId(Integer vId) {
+    public void setVId(Integer vId) {
         this.vId = vId;
     }
 
-    public String getvName() {
+    public String getVName() {
         return vName;
     }
 
-    public void setvName(String vName) {
+    public void setVName(String vName) {
         this.vName = vName;
     }
 
-    public String getvPhone() {
+    public String getVPhone() {
         return vPhone;
     }
 
-    public void setvPhone(String vPhone) {
+    public void setVPhone(String vPhone) {
         this.vPhone = vPhone;
     }
 
-    public String getvAddress() {
+    public String getVAddress() {
         return vAddress;
     }
 
-    public void setvAddress(String vAddress) {
+    public void setVAddress(String vAddress) {
         this.vAddress = vAddress;
     }
 

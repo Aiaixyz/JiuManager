@@ -26,47 +26,47 @@ public class User {
                 ", uUsername='" + uUsername + '\'' +
                 ", uPassword='" + uPassword + '\'' +
                 ", uRealname='" + uRealname + '\'' +
-                ", uPermit='" + uPermit + '\'' +
+                ", uPermit=" + uPermit +
                 '}';
     }
 
-    public Integer getuId() {
+    public Integer getUId() {
         return uId;
     }
 
-    public void setuId(Integer uId) {
+    public void setUId(Integer uId) {
         this.uId = uId;
     }
 
-    public String getuUsername() {
+    public String getUUsername() {
         return uUsername;
     }
 
-    public void setuUsername(String uUsername) {
+    public void setUUsername(String uUsername) {
         this.uUsername = uUsername;
     }
 
-    public String getuPassword() {
+    public String getUPassword() {
         return uPassword;
     }
 
-    public void setuPassword(String uPassword) {
+    public void setUPassword(String uPassword) {
         this.uPassword = uPassword;
     }
 
-    public String getuRealname() {
+    public String getURealname() {
         return uRealname;
     }
 
-    public void setuRealname(String uRealname) {
+    public void setURealname(String uRealname) {
         this.uRealname = uRealname;
     }
 
-    public Integer getuPermit() {
+    public Integer getUPermit() {
         return uPermit;
     }
 
-    public void setuPermit(Integer uPermit) {
+    public void setUPermit(Integer uPermit) {
         this.uPermit = uPermit;
     }
 

@@ -32,6 +32,7 @@ public class LoginFilter extends BaseFilter {
         if(uri.endsWith("index.html")
                 || uri.endsWith("userLogin.html")
                 || uri.endsWith("adminLogin.html")
+                || uri.endsWith("register.html")
                 || uri.endsWith(".js")
                 || uri.endsWith(".css")
                 || uri.endsWith("UserController")

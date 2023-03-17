@@ -42,8 +42,8 @@ public class AdminController extends BaseServlet {
         RespBean respBean = adminService.login(username, password);
         if (respBean.getStatus() == 200){
             User user = (User)respBean.getData();
-            req.getSession().setAttribute("id",user.getuId());
-            req.getSession().setAttribute("realname",user.getuRealname());
+            req.getSession().setAttribute("id",user.getUId());
+            req.getSession().setAttribute("realname",user.getURealname());
             return RespBean.respSuccess("登录成功",null);
         }
         return RespBean.respSuccess("登录失败",null);

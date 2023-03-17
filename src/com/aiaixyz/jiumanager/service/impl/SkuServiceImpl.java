@@ -42,7 +42,7 @@ public class SkuServiceImpl implements SkuService<Sku> {
         List<Sku> list = skuDao.getBeanBySku(sku);
         if (list.isEmpty()){
             return RespBean.respError("请求失败",null);
-        }return RespBean.respSuccess("请求成功",list.get(0));
+        }return RespBean.respSuccess("请求成功",list);
     }
 
     @Override

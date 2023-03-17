@@ -77,7 +77,7 @@ public class VendorsServiceImpl implements VendorsService {
     public RespBean getPhoneByName(String name) {
         List<Vendors> list = vendorsDao.getBeanByName(name);
         if (!list.isEmpty()){
-            String phone = list.get(0).getvPhone();
+            String phone = list.get(0).getVPhone();
             if (!phone.isEmpty()){
                 return RespBean.respSuccess("获取成功",phone);
             }
@@ -89,7 +89,7 @@ public class VendorsServiceImpl implements VendorsService {
     public RespBean getAddressByName(String name) {
         List<Vendors> list = vendorsDao.getBeanByName(name);
         if (!list.isEmpty()) {
-            String address = list.get(0).getvAddress();
+            String address = list.get(0).getVAddress();
             if (!address.isEmpty()) {
                 return RespBean.respSuccess("获取成功", address);
             }

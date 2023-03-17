@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>addVendors</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $("#submit").click(function (){
+        let name = $("#name").val();
+        let dId =$("#dId").val();
+        let vId = $("#vId").val();
+        console.log(name+' 1 '+dId+' 1 '+vId)
+        if (name == '' || dId == '' || vId == ''){
+          alert("请添加数据")
+        }else {
+          $.ajax({
+            url:'/JiuManager/SkuController',
+            data:{
+              method:"addBean",
+              name:name,
+              quantity:0,
+              dId:dId,
+              vId:vId
+            },
+            type:'get',
+            dataType:'json',
+            success:function (respBean){
+              console.log(respBean);
+              alert(respBean.msg)
+            }
+          })
+        }
+      })
+
+    $("#del_btn").click(function (){
+      let sku = $("#del").val();
+      console.log("del_btn")
+      if (sku == ''){
+        alert("请添加数据")
+      }else {
+        $.ajax({
+          url:'/JiuManager/SkuController',
+          data:{
+            method:"deleteBeanBySku",
+            sku:sku
+          },
+          type:'get',
+          dataType:'json',
+          success:function (respBean){
+            console.log(respBean);
+            alert(respBean.msg)
+          }
+        })
+      }
+    })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <form class="form-inline"></form>
+  <nav class="nav"><h3>添加Sku：</h3></nav>
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <label>Sku名称</label><input type="text" class="form-control" id="name">
+    <label>Sku仓库ID</label><input type="text" class="form-control" id="dId">
+  </div>
+  <div class="col-md-5">
+    <label>Sku供应商ID</label><input type="text"  class="form-control" id="vId">
+    <label>提交</label><input type="button" value="确认添加" class="form-control" id="submit">
+  </div>
+  <div class="col-md-1"></div>
+</div>
+<div class="container">
+  <form class="form-inline"></form>
+  <nav class="nav"><h3>删除SKU：</h3></nav>
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <label>Sku名称</label><input type="text" class="form-control" id="del">
+  </div>
+  <div class="col-md-5">
+    <label>提交</label><input type="button" value="确认删除" class="form-control" id="del_btn">
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+</body>
+</html>

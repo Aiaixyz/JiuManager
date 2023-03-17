@@ -55,8 +55,8 @@ public class UserController extends BaseServlet {
             User user = (User)respBean.getData();
             req.getSession().removeAttribute("id");
             req.getSession().removeAttribute("realname");
-            req.getSession().setAttribute("id",user.getuId());
-            req.getSession().setAttribute("realname",user.getuRealname());
+            req.getSession().setAttribute("id",user.getUId());
+            req.getSession().setAttribute("realname",user.getURealname());
             return RespBean.respSuccess("登录成功",null);
         }
         return RespBean.respSuccess("登录失败",null);
@@ -103,5 +103,9 @@ public class UserController extends BaseServlet {
         req.getSession().removeAttribute("realname");
         req.getSession().removeAttribute("username");
         return RespBean.respSuccess("您已经退出!",null);
+    }
+
+    protected RespBean deleteBeanById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        return userService.deleteBeanById(Integer.parseInt(req.getParameter("id")));
     }
 }

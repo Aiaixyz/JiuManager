@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Register.</title>
+  <link href="./asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="./asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="./asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="./asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="./asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $("#submit").click(function (){
+        let username = $("#username").val();
+        let password =$("#password").val();
+        let realname = $("#realname").val();
+        console.log(username+' 1 '+password+' 1 '+realname)
+        if (username == '' || password == '' || realname == ''){
+          alert("请添加数据")``
+        }else {
+          $.ajax({
+            url:'/JiuManager/UserController',
+            data:{
+              method:"Register",
+              username:username,
+              password:password,
+              realname:realname
+            },
+            type:'get',
+            dataType:'json',
+            success:function (respBean){
+              console.log(respBean);
+              alert(respBean.msg)
+            }
+          })
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <nav class="nav"><h1>User Register.</h1></nav>
+    <form class="form-group">
+      <label>用户名：</label><input type="text" class="form-control" id="username">
+      <label>密 码：</label><input type="text" class="form-control" id="password">
+      <label>姓 名：</label><input type="text" class="form-control" id="realname">
+      <br>
+      <input type="button" class="form-control" id="submit" value="立即注册">
+    </form>
+  </div>
+  <div class="col-md-3"></div>
+
+</div>
+
+</body>
+</html>

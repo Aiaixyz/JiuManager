@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addVendors</title>
+    <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+    <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+    <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+    <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+    <script>
+        $(function (){
+            $("#submit").click(function (){
+                let name = $("#name").val();
+                let phone =$("#phone").val();
+                let address = $("#address").val();
+                console.log(name+' 1 '+phone+' 1 '+address)
+                if (name == '' || phone == '' || address == ''){
+                    alert("请添加数据")
+                }else {
+                    $.ajax({
+                        url:'/JiuManager/VendorsController',
+                        data:{
+                            method:"addBean",
+                            name:name,
+                            phone:phone,
+                            address:address
+                        },
+                        type:'get',
+                        dataType:'json',
+                        success:function (respBean){
+                            console.log(respBean);
+                            alert(respBean.msg)
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <form class="form-inline"></form>
+    <nav class="nav"><h3>添加供应商：</h3></nav>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <label>供应商名称</label><input type="text" class="form-control" id="name">
+        <label>供应商地址</label><input type="text" class="form-control" id="address">
+    </div>
+    <div class="col-md-5">
+        <label>联系方式</label><input type="text"  class="form-control" id="phone">
+        <label>提交</label><input type="button" value="确认添加" class="form-control" id="submit">
+    </div>
+    <div class="col-md-1"></div>
+
+</div>
+
+</body>
+</html>

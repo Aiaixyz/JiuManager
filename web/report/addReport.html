@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>addReport</title>
+  <link href="../asserts/plugins/BootstrapV3/css/bootstrap.css" rel="stylesheet">
+  <script src="../asserts/plugins/JQuery/jquery-3.6.0.min.js"></script>
+  <script src="../asserts/plugins/BootstrapV3/js/bootstrap.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/bootstrapValidator.js"></script>
+  <script src="../asserts/plugins/bootstrapValidator/zh_CN.js"></script>
+  <script>
+    $(function (){
+      $("#submit").click(function (){
+        let operation = $("#operation").val();
+        let note =$("#note").val();
+        let id = $("#id").val();
+        let sku = $("#sku").val();
+        if (operation == '' || note == '' || id == ''|| sku == ''){
+          alert("请添加数据")
+        }else {
+          $.ajax({
+            url:'/JiuManager/ReportController',
+            data:{
+              method:"addReport",
+              Operation:operation,
+              Note:note,
+              uid:id,
+              sku:sku
+            },
+            type:'get',
+            dataType:'json',
+            success:function (respBean){
+              console.log(respBean);
+              alert(respBean.msg)
+            }
+          })
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <form class="form-inline"></form>
+  <nav class="nav"><h3>添加自定义日志：</h3></nav>
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <label>操作记录:</label><input type="text" class="form-control" id="operation">
+    <label>操作备注：</label><input type="text" class="form-control" id="note">
+  </div>
+  <div class="col-md-5">
+    <label>操作人：</label><input type="text"  class="form-control" id="id">
+    <label>操作SKU：</label><input type="text"  class="form-control" id="sku">
+    <label>操作：</label><input type="button" value="确认添加" class="form-control warning" id="submit">
+  </div>
+  <div class="col-md-1"></div>
+
+</div>
+
+</body>
+</html>

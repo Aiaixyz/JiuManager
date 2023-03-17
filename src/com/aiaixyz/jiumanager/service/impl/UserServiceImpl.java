@@ -34,7 +34,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public RespBean deleteBeanById(int id) {
-        return null;
+        if (userDao.deleteBeanById(id) != 1){
+            return RespBean.respError("删除失败",null);
+        }return RespBean.respSuccess("操作成功",null);
     }
 
     /**
@@ -63,7 +65,7 @@ public class UserServiceImpl implements UserService {
         UserBo userBo;
         for (User user:users) {
             userBo = new UserBo(user);
-            userBo.setsPermit(user.getuPermit() == 1?"用户":"管理员");
+            userBo.setsPermit(user.getUPermit() == 1?"用户":"管理员");
             userBos.add(userBo);
         }
         if (userBos.isEmpty()){
@@ -105,7 +107,7 @@ public class UserServiceImpl implements UserService {
         int id = userDao.getIdByUsername(username);
         if (id != 0){
             User user = userDao.getBeanById(id).get(0);
-            if (password.equals(user.getuPassword())){
+            if (password.equals(user.getUPassword())){
                 return RespBean.respSuccess("登录成功",user);
             }return RespBean.respError("密码错误",null);
         }return RespBean.respError("用户不存在",null);
@@ -114,8 +116,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public RespBean getUsernameById(int id){
         User user = userDao.getBeanById(id).get(0);
-        if (user.getuId() == 0){
+        if (user.getUId() == 0){
             return RespBean.respError("未查询到用户",null);
-        }return RespBean.respSuccess("请求成功",user.getuUsername());
+        }return RespBean.respSuccess("请求成功",user.getUUsername());
     }
 }
